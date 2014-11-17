@@ -1,0 +1,23 @@
+<plugin id="org.dita-community.indirectortopic.preprocess">
+  <!-- 
+    
+    Extends the link-generation preprocess phase to also handle 
+    indirector links.
+    
+    
+    -->
+  
+  <extension-point id="xsl.dcIndirectorTopicPreprocess" 
+    name="DITA Community Indirector Topic Preprocessing XSLT extensions"/>
+  
+  <require plugin="org.dita-community.common.xslt"/>
+  
+  
+  <template file="xsl/indirectorTopicPreprocess_template.xsl"/>
+  
+  <feature extension="dita.xsl.maplink"
+    file="xsl/indirector-topic-maplink.xsl"
+  />
+
+  
+</plugin>
