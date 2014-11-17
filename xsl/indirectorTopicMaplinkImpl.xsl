@@ -4,9 +4,8 @@
   xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
   exclude-result-prefixes="xs xd"
   version="2.0">
-  
   <!-- =========================================
-       Indirector Topic Preprocessing Extensions
+       Indirector Topic Maplink Extensions
        
        Extends the base maplinkImpl.xsl transform
        in order to generate links created by
@@ -16,7 +15,5 @@
        Copyright (c) 2014 Eliot Kimber
        ========================================= -->
   
-  <!-- Templates go here. -->
-       
   
 </xsl:stylesheet>

@@ -7,16 +7,22 @@
     
     -->
   
-  <extension-point id="xsl.dcIndirectorTopicPreprocess" 
-    name="DITA Community Indirector Topic Preprocessing XSLT extensions"/>
+  <extension-point id="xsl.dcIndirectorTopicMaplink" 
+    name="DITA Community Indirector Topic Maplink XSLT extensions"/>
+  <extension-point id="xsl.dcIndirectorTopicTopicpull" 
+    name="DITA Community Indirector Topic Maplink XSLT extensions"/>
   
   <require plugin="org.dita-community.common.xslt"/>
   
   
-  <template file="xsl/indirectorTopicPreprocess_template.xsl"/>
+  <template file="xsl/indirectorTopicMaplink_template.xsl"/>
+  <template file="xsl/indirectorTopicTopicpull_template.xsl"/>
   
   <feature extension="dita.xsl.maplink"
-    file="xsl/indirector-topic-maplink.xsl"
+    file="xsl/indirectorTopicMaplink.xsl"
+  />
+  <feature extension="dita.xsl.topicpull"
+    file="xsl/indirectorTopicTopicpull.xsl"
   />
 
   
